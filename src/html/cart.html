@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../lib/base.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../jQueryGwc/css/carts.css">
+    <link rel="stylesheet" href="../jQueryGwc/css/reset.css">
+
+
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+    <header>
+        <!-- 登录条 -->
+        <div id="loginbar">
+            <div class="conter">
+                <!-- 登录条 左边 -->
+                <div class="loginbar-left">
+                    您好，欢迎来到
+                    <a href="https://www.baiyangwang.com/">百洋健康</a>
+                    <span>[<a href="html/signin.html">登录</a>]</span>
+                    <span>[<a href="html/register.html">注册</a>]</span>
+                </div>
+                <!-- 登录条 右边-->
+                <div class="loginbar-right">
+                    <!-- 我的订单 -->
+                    <dl>
+                        <dt>我的订单 ∨</dt>
+                        <i></i>
+                        <dd class="loginbarDd">
+                            <ul>
+                                <li> <a href="">待付款订单</a> </li>
+                                <li><a href="">待确认收货</a></li>
+                                <li><a href="">待评价交易</a></li>
+                            </ul>
+                        </dd>
+
+                    </dl>
+
+                    <!-- 我的收藏 -->
+                    <dl>
+                        <dt>我的收藏 ∨</dt>
+                        <i></i>
+                        <dd class="loginbarDd">
+                            <ul>
+                                <li> <a href="">商品收藏</a> </li>
+                                <li><a href="">店铺收藏</a></li>
+
+                            </ul>
+                        </dd>
+
+                    </dl>
+
+                    <!-- 客户服务 -->
+                    <dl>
+                        <dt>客户服务 ∨</dt>
+                        <i></i>
+                        <dd class="loginbarDd">
+                            <ul>
+                                <li> <a href="">帮助中心</a> </li>
+                                <li><a href="">售后服务</a></li>
+                                <li><a href="">客服中心</a></li>
+                            </ul>
+                        </dd>
+
+                    </dl>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+    <div class="ncc-head-layout">
+
+        <div class="site-logo">
+            <a href="https://www.baiyangwang.com">
+                <img src="https://b2cstatic.baiyangwang.com/shop/common/logo.png" class="pngFix">
+            </a>
+        </div>
+        <ul class="ncc-flow">
+            <li class="current"><i class="step1"></i>
+                <p>我的购物车</p>
+                <sub></sub>
+                <div class="hr"></div>
+            </li>
+            <li class=""><i class="step2"></i>
+                <p>确认结算</p>
+                <sub></sub>
+                <div class="hr"></div>
+            </li>
+            <li class=""><i class="step3"></i>
+                <p>支付提交</p>
+                <sub></sub>
+                <div class="hr"></div>
+            </li>
+            <li class=""><i class="step4"></i>
+                <p>订单完成</p>
+                <sub></sub>
+                <div class="hr"></div>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <div>
+
+
+
+        <section class="cartMain">
+
+            <div class="cartMain_hd">
+                <ul class="order_lists cartTop">
+                    <li class="list_chk">
+                        <!--所有商品全选-->
+                        <input type="checkbox" id="all" class="whole_check">
+                        <label for="all"></label>
+                        全选
+                    </li>
+                    <li class="list_con">商品信息</li>
+                    <li class="list_info">商品参数</li>
+                    <li class="list_price">单价</li>
+                    <li class="list_amount">数量</li>
+                    <li class="list_sum">金额</li>
+                    <li class="list_op">操作</li>
+                </ul>
+            </div>
+
+
+
+
+
+            <div class="cartBox">
+                <div class="shop_info">
+                    <div class="all_check">
+                        <!--店铺全选-->
+                        <input type="checkbox" id="shop_b" class="shopChoice">
+                        <label for="shop_b" class="shop"></label>
+                    </div>
+                    <div class="shop_name">
+                        店铺：<a href="javascript:;">百洋健康官方自营店 </a>
+                    </div>
+                </div>
+                <div class="order_content">
+
+                    <!-- <ul class="order_lists">
+                        <li class="list_chk">
+                            <input type="checkbox" id="checkbox_4" class="son_check">
+                            <label for="checkbox_4"></label>
+                        </li>
+                        <li class="list_con">
+                            <div class="list_img"><a href="javascript:;"><img src="./images/4.png" alt=""></a></div>
+                            <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                        </li>
+                        <li class="list_info">
+                            <p>规格：默认</p>
+                            <p>尺寸：16*16*3(cm)</p>
+                        </li>
+                        <li class="list_price">
+                            <p class="price">￥1980</p>
+                        </li>
+                        <li class="list_amount">
+                            <div class="amount_box">
+                                <a href="javascript:;" class="reduce reSty">-</a>
+                                <input type="text" value="1" class="sum">
+                                <a href="javascript:;" class="plus">+</a>
+                            </div>
+                        </li>
+                        <li class="list_sum">
+                            <p class="sum_price">￥1980</p>
+                        </li>
+                        <li class="list_op">
+                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                        </li>
+                    </ul>
+                    <ul class="order_lists">
+                        <li class="list_chk">
+                            <input type="checkbox" id="checkbox_5" class="son_check">
+                            <label for="checkbox_5"></label>
+                        </li>
+                        <li class="list_con">
+                            <div class="list_img"><a href="javascript:;"><img src="./images/5.png" alt=""></a></div>
+                            <div class="list_text"><a href="javascript:;">夏季男士迷彩无袖T恤圆领潮流韩版修身男装背心青年时尚打底衫男</a></div>
+                        </li>
+                        <li class="list_info">
+                            <p>规格：默认</p>
+                            <p>尺寸：16*16*3(cm)</p>
+                        </li>
+                        <li class="list_price">
+                            <p class="price">￥480</p>
+                        </li>
+                        <li class="list_amount">
+                            <div class="amount_box">
+                                <a href="javascript:;" class="reduce reSty">-</a>
+                                <input type="text" value="1" class="sum">
+                                <a href="javascript:;" class="plus">+</a>
+                            </div>
+                        </li>
+                        <li class="list_sum">
+                            <p class="sum_price">￥480</p>
+                        </li>
+                        <li class="list_op">
+                            <p class="del"><a href="javascript:;" class="delBtn">移除商品</a></p>
+                        </li>
+                    </ul> -->
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!--底部-->
+            <div class="bar-wrapper">
+                <div class="bar-right">
+                    <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                    <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                    <div class="calBtn"><a href="javascript:;">结算</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="model_bg"></section>
+        <section class="my_model">
+            <p class="title">删除宝贝<span class="closeModel">X</span></p>
+            <p>您确认要删除该宝贝吗？</p>
+            <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;"
+                    class="dialog-close">关闭</a></div>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- 底部 -->
+    <footer>
+        <div class="conter">
+            <!-- ******************footer1   ************************ -->
+            <div class="footer1">
+                <img src="../imgs/index/ia_10034.jpg" alt="baozhang_img">
+            </div>
+
+            <!-- ******************footer2   ************************ -->
+            <div class="footer2">
+                <!-- 左边 log -->
+                <div class="footer2-left">
+                    <div class="foot_logo">
+                        <img src="../imgs/index/ia_10075.png" alt="">
+                    </div>
+                    <div class="foot_guanzhu">
+
+                        <div>关注我们</div>
+                        <div>
+                            <img src="../imgs/index/ia_10082.png" alt="">
+
+                            <div class="test_triangle_border popup_weibo">
+                                <span></span>
+                                <img src="../imgs/index/ia_10025.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="../imgs/index/ia_10081.png" alt="">
+
+                            <div class="test_triangle_border popup_weixin">
+                                <span></span>
+                                <img src="../imgs/index/ia_10026.jpg" alt="">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- 中间 列表 -->
+                <!-- <ul class="footer2-conter">
+                    <li>
+                        <dl>
+                            <dt>
+                                新手指南
+                            </dt>
+                            <dd>
+                                购买流程
+                            </dd>
+                            <dd>
+                                支付方式
+                            </dd>
+                            <dd>
+                                通关税费
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                    <li>
+                        <dl>
+                            <dt>
+                                售后服务
+
+
+                            </dt>
+                            <dd>
+                                退货政策
+
+                            </dd>
+                            <dd>
+                                退货流程
+
+                            </dd>
+                            <dd>
+                                退款流程
+                            </dd>
+
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                物流配送
+                            </dt>
+                            <dd>
+                                配送方式
+
+                            </dd>
+                            <dd>
+                                物流跟踪
+
+                            </dd>
+                            <dd>
+                                自选物流
+                            </dd>
+
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                关于我们
+
+                            </dt>
+                            <dd>
+                                公司简介
+
+                            </dd>
+                            <dd>
+                                联系我们
+
+                            </dd>
+                            <dd>
+                                招商合作
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                </ul>  -->
+
+
+                <!-- 右边二维码 -->
+                <div class="footer2-right">
+                    <div>
+                        <p>
+                            <img src="../imgs/index/ia_10076.jpg" alt="">
+                        </p>
+                        <p>
+                            扫描进入微信商城
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img src="../imgs/index/ia_10077.jpg" alt="">
+
+                        </p>
+                        <p>
+                            扫描下载百洋APP
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="footer3">
+                <!-- 
+                <p>
+                    <a href="javascript:void(0)">友情链接申请</a>
+                    | <a target="_blank" href="http://www.telllove520.com/">求婚公司</a>
+                    | <a target="_blank" href="http://www.yangshengyinshi.com">食疗养生</a>
+                    | <a target="_blank" href=" http://www.chinajs120.com">九博精神健康网</a>
+                    | <a target="_blank" href="https://www.160dyf.com">网上药店</a>
+                    | <a target="_blank" href="https://www.nuuha.com/ ">健康养生</a>
+                    | <a target="_blank" href="http://www.999ask.com/">邻医网</a>
+                    | <a target="_blank" href="http://www.yitiaogen8.com">养生网</a>
+                    | <a target="_blank" href="http://www.gaofeib2c.com ">红酒代理</a>
+                    | <a target="_blank" href=" http://www.baijiu88.com">定制酒</a>
+                    | <a target="_blank" href="http://www.yxk120.com">网上药店</a>
+                    | <a target="_blank" href="http://www.fuguantang.com">药房网</a>
+                    | <a target="_blank" href="http://www.zyzydq.com/">中医中药大全网</a>
+                    | <a target="_blank" href="https://www.xiumz.com/">中医养生</a>
+                    | <a target="_blank" href="https://www.mlaoban.com">网店转让</a>
+                    | <a target="_blank" href="http://www.chinamaofa.com/">植发医院</a>
+                    | <a target="_blank" href="http://www.17bigu.com">辟谷</a>
+                    | <a target="_blank" href="http://www.sixzt.com">活力舒</a>
+                    | <a target="_blank" href="http://www.ysb.cn">冬虫夏草</a>
+                    | <a target="_blank" href="https://www.zangyaow.com">藏药</a>
+                    | <a target="_blank" href="https://www.yaofangwang.com/">药房网</a>
+                </p> -->
+                <br>
+                <p>
+                    <a href="../baiyangwang.html" target="_blank">首页</a>
+                    | <a target="_blank"
+                        href="https://www.baiyangwang.com/member/article-article-ac_id-22.html">联系我们</a>
+
+                </p>
+                <p>
+                    <a target="_blank" href="http://www.beian.miit.gov.cn/">鲁ICP备09091598号</a>
+                    版权所有 2007-2018 青岛百洋健康药房连锁有限公司 百洋健康
+                    <a target="_blank"
+                        href="https://b2cstatic.baiyangwang.com/shop/common/lADPDgQ9qcyZo-jNBlnNCIw_2188_1625.jpg">互联网药品信息服务资质证书编号
+                        (鲁)-经营性-2017-0003</a>
+                    <a target="_blank" href="https://shopncstaticimage.baiyangwang.com/ylqxxkz.jpg">医疗器械经营许可证</a>
+
+                </p>
+                <br>
+                <p>
+                    <a href="http://www.12377.cn/">
+                        <img src="../imgs/index/ia_10078.jpg">
+                    </a>
+
+                </p>
+
+
+
+            </div>
+
+
+        </div>
+
+    </footer>
+</body>
+<script src="../lib/jquery-1.10.1.min.js"></script>
+<script src="../lib/common.js"></script>
+
+
+<script src="../js/cart.js"></script>
+
+<script src="../jQueryGwc/js/carts.js" async="false"></script>
+
+</html>

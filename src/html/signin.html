@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="../lib/base.css">
+    <link rel="stylesheet" href="../css/signin.css">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 class="site-logo">
+                <a href="###">
+                    <img src="../imgs/register/ia_10005.png" alt="">
+                </a>
+            </h1>
+            <div class="nc-login-now">
+                <span class="avatar">
+                    <img src="../imgs/Signin/ia_10004.jpg" alt="">
+                </span>
+                <span>您好，欢迎来到百洋健康
+                    <br>
+                    已注册的会员请登录，或立即
+                    <a title="" href="register.html" class="register">
+                        注册新会员
+                    </a>
+                </span>
+            </div>
+
+
+
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="left-pic">
+            <img src="../imgs/Signin/ia_10003.jpg" alt="">
+        </div>
+        <div class="nc-login">
+
+            <span class="arrow"></span>
+            <div class="nc-login-mode">
+
+                <ul class="tabs-nav">
+                    <li class="active"><a href="#default" class="tabulous_active">用户登录<i></i></a></li>
+                    <li><a href="#mobile" class="">手机动态码登录<i></i></a></li><span class="tabulousclear"></span>
+                </ul>
+
+                <div class="tabs-covntainer box1 box">
+
+                    <dl class="user_name">
+                        <dt>账&nbsp;&nbsp;&nbsp;号：</dt>
+                        <dd>
+                            <input type="text" class="text" id="username1" placeholder="可使用已注册的用户名或手机号登录">
+                        </dd>
+                        <p id="verifyUserNameMsg"></p>
+
+                    </dl>
+
+                    <dl class="password">
+                        <dt>密&nbsp;&nbsp;&nbsp;码：</dt>
+                        <dd>
+                            <input type="password" class="text" id="password" placeholder="6-20个大小写英文字母、符号或数字">
+                        </dd>
+                    </dl>
+
+
+
+                    <!-- 随机数  -->
+
+                    <div class=" code-div">
+                        <dl>
+                            <dt>验证码：</dt>
+
+                            <dd>
+                                <input type="text" name="captcha" class="text" id="image_captcha" size="10"
+                                    tipmsg="输入验证码" placeholder="输入验证码" ">
+                        </dd>
+
+                    </dl>
+
+                    <div>
+                        <span class=" random">
+
+                                </span>
+
+                                <a class="makecode1" href="javascript:void(0);">
+                                    看不清，换一张
+                                </a>
+                    </div>
+
+
+                </div>
+
+
+                <div class="handle-div">
+                    <span class="auto">
+                        <input type="checkbox" class="checkbox">七天自动登录
+                        <em style="display: none;">请勿在公用电脑上使用</em>
+                    </span>
+                    <a class="forget"
+                        href="https://www.baiyangwang.com/member/index.php?act=login&amp;op=forget_password">忘记密码？</a>
+                </div>
+
+
+                <div class="submit-div">
+                    <input type="submit" id="submit" class="submit" value="登&nbsp;&nbsp;&nbsp;录">
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="tabs-container  box2 box">
+
+                <dl class="user_name">
+                    <dt>手机号：</dt>
+                    <dd>
+                        <input type="text" class="text" id="user_name" placeholder="可填写已注册的手机号接收短信">
+                    </dd>
+                    <p id="verifyUserNameMsg"></p>
+                </dl>
+
+
+
+
+                <!-- 随机数  -->
+
+                <div class="code-div">
+                    <dl>
+                        <dt>验证码：</dt>
+
+                        <dd>
+                            <input type="text" name="captcha" class="text" id="image_captcha" size="10" tipmsg="输入验证码"
+                                placeholder="输入验证码" ">
+                    </dd>
+
+                </dl>
+
+                <div>
+                    <span class=" random1">
+
+                            </span>
+
+                            <a class="makecode2" href="javascript:void(0);">
+                                看不清，换一张
+                            </a>
+                </div>
+
+
+            </div>
+
+
+            <div class="tiptext" id="sms_text">
+                确保上方验证码输入正确，点击
+                <span>
+                    <a href="javascript:void(0);">
+                        <i class="icon-mobile-phone">
+                        </i>发送短信验证
+                    </a>
+                </span>
+                ，并将您手机短信所接收到的“6位动态码”输入到下方短信验证，再提交下一步。
+            </div>
+
+
+
+            <!-- 随机数 手机验证码 -->
+            <dl class="password">
+                <dt>动态码：</dt>
+                <dd>
+                    <input type="text" class="text" id="password" placeholder="6-输入6位手机动态码">
+                </dd>
+            </dl>
+
+
+
+
+            <div class="submit-div">
+                <input type="submit" id="submit" class="submit" value="登&nbsp;&nbsp;&nbsp;录">
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+        </div>
+
+
+
+
+    </main>
+
+
+
+
+    <footer>
+        <p>
+            <a href="../baiyangwang.html" target="_blank">首页</a>
+            | <a target="_blank" href="https://www.baiyangwang.com/member/article-article-ac_id-22.html">联系我们</a>
+
+        </p>
+        <p>
+            <a target="_blank" href="http://www.beian.miit.gov.cn/">鲁ICP备09091598号</a>
+            版权所有 2007-2018 青岛百洋健康药房连锁有限公司 百洋健康
+            <a target="_blank"
+                href="https://b2cstatic.baiyangwang.com/shop/common/lADPDgQ9qcyZo-jNBlnNCIw_2188_1625.jpg">互联网药品信息服务资质证书编号
+                (鲁)-经营性-2017-0003</a>
+            <a target="_blank" href="https://shopncstaticimage.baiyangwang.com/ylqxxkz.jpg">医疗器械经营许可证</a>
+
+        </p>
+
+
+    </footer>
+
+
+</body>
+
+
+<script src="../lib/common.js"></script>
+<script src="../js/signin.js"></script>
+
+
+</html>

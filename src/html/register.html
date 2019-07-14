@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="../lib/base.css">
+
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+
+<body>
+    <header>
+        <div class="box">
+            <h1 class="site-logo">
+                <a href="###">
+                    <img src="../imgs/register/ia_10005.png" alt="">
+                </a>
+            </h1>
+            <div class="nc-login-now">
+                我已经注册，现在就
+                <a href="signin.html"> 登录</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="nc-register-box">
+            <div class="nc-register-layout">
+
+                <div class="left">
+                    <div class="left-top">
+                        <div class="tabs-nav">
+                            <a href="###">手机注册</a>
+                            <i></i>
+                        </div>
+                    </div>
+
+                    <div id="mobile" class="tabs-content">
+                        <dl>
+                            <dt>手机号：</dt>
+                            <dd>
+                                <input type="text" class="text" tipmsg="请输入手机号码" autocomplete="off"
+                                    placeholder="请输入手机号码" name="phone" id="phone"">
+                                    <span class=" inf"></span>
+                            </dd>
+                        </dl>
+
+
+                        <div class="code-div">
+                            <dl>
+                                <dt>验证码：</dt>
+
+                                <dd>
+                                    <input type="text" name="captcha" class="text" id="image_captcha" size="10"
+                                        tipmsg="输入验证码" placeholder="输入验证码" ">
+                                        <span class=" inf"></span>
+                                </dd>
+
+                            </dl>
+
+                            <div>
+                                <span class=" random1">
+
+                                </span>
+
+                                <a class="makecode" href="javascript:void(0);">
+                                    看不清，换一张
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="tiptext" id="sms_text">
+                            确保上方验证码输入正确，点击
+                            <span>
+                                <a href="javascript:void(0);" id="btn">
+                                    <i class="icon-mobile-phone">
+                                    </i>发送短信验证
+                                </a>
+                            </span>
+                            ，并将您手机短信所接收到的“6位动态码”输入到下方短信验证，再提交下一步。
+                        </div>
+
+                        <dl>
+                            <dt>短信验证：</dt>
+                            <dd>
+                                <input type="text" name="sms_captcha" autocomplete="off" tipmsg="输入6位短信验证码" class="text"
+                                    id="sms_captcha" size="15" placeholder="输入6位短信验证码"
+                                    style="color: rgb(187, 187, 187);">
+                            </dd>
+                        </dl>
+
+
+
+
+                        <div class="submit-div">
+                            <input type="button" id="submitBtn" class="submit" value="下一步">
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="right">
+                    <h4>注册之后您可以</h4>
+                    <ul>
+                        <li class="ico01"><i></i>购买商品支付订单</li>
+                        <li class="ico02"><i></i>收藏商品关注店铺</li>
+                        <li class="ico03"><i></i>安全交易诚信无忧</li>
+                        <li class="ico04"><i></i>积分获取优惠购物</li>
+                        <li class="ico05"><i></i>会员等级享受特权</li>
+                        <li class="ico06"><i></i>评价晒单站外分享</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+
+    <div class="cti">
+
+    </div>
+
+
+    <footer>
+        <p>
+            <a href="../baiyangwang.html" target="_blank">首页</a>
+            | <a target="_blank" href="https://www.baiyangwang.com/member/article-article-ac_id-22.html">联系我们</a>
+
+        </p>
+        <p>
+            <a target="_blank" href="http://www.beian.miit.gov.cn/">鲁ICP备09091598号</a>
+            版权所有 2007-2018 青岛百洋健康药房连锁有限公司 百洋健康
+            <a target="_blank"
+                href="https://b2cstatic.baiyangwang.com/shop/common/lADPDgQ9qcyZo-jNBlnNCIw_2188_1625.jpg">互联网药品信息服务资质证书编号
+                (鲁)-经营性-2017-0003</a>
+            <a target="_blank" href="https://shopncstaticimage.baiyangwang.com/ylqxxkz.jpg">医疗器械经营许可证</a>
+
+        </p>
+
+
+    </footer>
+
+
+</body>
+<script src="../lib/1.9.1jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../lib/common.js"></script>
+<script src="../js/register.js"></script>
+
+
+
+</html>

@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../lib/base.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/details.css">
+
+    <link rel="stylesheet" href="../css/magnifier.css">
+
+    <!-- <link rel="stylesheet" href="../lib/city/kuCity.css"> -->
+    <link rel="stylesheet" href="../css/details.css">
+
+</head>
+
+<body>
+    <!-- tb -->
+    <header>
+        <!-- 登录条 -->
+        <div id="loginbar">
+            <div class="conter">
+                <!-- 登录条 左边 -->
+                <div class="loginbar-left">
+                    您好，欢迎来到
+                    <a href="https://www.baiyangwang.com/">百洋健康</a>
+                    <span>[<a href="html/signin.html">登录</a>]</span>
+                    <span>[<a href="html/register.html">注册</a>]</span>
+                </div>
+                <!-- 登录条 右边-->
+                <div class="loginbar-right">
+                    <!-- 我的订单 -->
+                    <dl>
+                        <dt>我的订单 ∨</dt>
+                        <i></i>
+                        <dd class="loginbarDd">
+                            <ul>
+                                <li> <a href="">待付款订单</a> </li>
+                                <li><a href="">待确认收货</a></li>
+                                <li><a href="">待评价交易</a></li>
+                            </ul>
+                        </dd>
+
+                    </dl>
+
+                    <!-- 我的收藏 -->
+                    <dl>
+                        <dt>我的收藏 ∨</dt>
+                        <i></i>
+                        <dd class="loginbarDd">
+                            <ul>
+                                <li> <a href="">商品收藏</a> </li>
+                                <li><a href="">店铺收藏</a></li>
+
+                            </ul>
+                        </dd>
+
+                    </dl>
+
+                    <!-- 客户服务 -->
+                    <dl>
+                        <dt>客户服务 ∨</dt>
+                        <i></i>
+                        <dd class="loginbarDd">
+                            <ul>
+                                <li> <a href="">帮助中心</a> </li>
+                                <li><a href="">售后服务</a></li>
+                                <li><a href="">客服中心</a></li>
+                            </ul>
+                        </dd>
+
+                    </dl>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <!-- logo -->
+        <div id="logo">
+            <div class="conter">
+
+                <!-- logo top -->
+                <div class="logo-search">
+
+                    <!-- logo 左边 -->
+                    <div class="logo-search-left">
+                        <h1>百洋健康_全球专业营养健康平台_全球专业营养健康资讯_全球专业营养健康服务</h1>
+                        <a href="###">
+                            <img src="../imgs/index/ia_10075.png" alt="logo 图片">
+                        </a>
+                    </div>
+
+                    <!-- logo 中间 -->
+                    <div class="logo-search-conter">
+                        <!-- 搜索框 部分 -->
+
+                        <div class="searchLogo-left">
+                            <a href="###">
+                                商品
+                            </a>
+                            <div class="searchTab">
+                                <a href="###">商品</a>
+                                <a href="###">店铺</a>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                        <div class="searchLogo-conter">
+                            <input type="text" placeholder="请输入您要搜索的商品关键字">
+
+
+
+
+
+                        </div>
+
+                        <div class="searchLogo-right">
+                            <a href="###">
+                                搜索
+                            </a>
+                        </div>
+                        <div class="keyword">
+                            <ul>
+                                <li>
+                                    <a href="###">迪巧</a>
+                                </li>
+                                <li>
+                                    <a href="###">蛋白粉</a>
+                                </li>
+                                <li>
+                                    <a href="###">眼贴</a>
+                                </li>
+                                <li>
+                                    <a href="###">玻尿酸</a>
+                                </li>
+                                <li>
+                                    <a href="###">橄榄油</a>
+                                </li>
+                                <li>
+                                    <a href="###">麦片</a>
+
+                                </li>
+                                <li>
+                                    <a href="###">克奥妮斯</a>
+
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+
+
+                    </div>
+
+                    <!-- logo 右边 -->
+                    <div class="logo-search-right">
+
+                        <dl class="my-mall">
+                            <dt>
+                                <span></span>
+                                我的商城
+                                <i></i>
+                            </dt>
+                            <dd></dd>
+
+                        </dl>
+                        <dl class="my-cart">
+                            <div class="cartDiv">1</div>
+                            <dt class="car">
+                                <span></span>
+                                购物车结算
+                                <i></i>
+                            </dt>
+                            <dd></dd>
+                        </dl>
+
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- logo bottom -->
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- 导航条 -->
+        <div id="nav">
+            <div class="conter">
+                <!-- 三级下拉菜单 -->
+                <div class="conterdiv">
+                    <dl class="navdl">
+                        <dt>
+                            <span></span>
+
+                            全部分类
+                        </dt>
+
+                        <dd>
+                            <ul class="navdlUl">
+                                <li class="navdlLi">微量元素
+
+                                    <div class="subClass" style="display: none;">
+                                        <div>
+                                            <span>维生素B</span>
+                                            <span>维生素C</span>
+                                            <span>维生素D</span>
+                                            <span>多种维生素</span>
+                                            <span>钙</span>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                            </ul>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+                                </li>
+                                <li class="navdlLi">营养补充
+
+
+                                    <div class="subClass" style="display: none;">
+                                        <div>
+                                            <span>维生素B</span>
+                                            <span>维生素C</span>
+                                            <span>维生素D</span>
+                                            <span>多种维生素</span>
+                                            <span>钙</span>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                            </ul>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </li>
+
+
+                                <li class="navdlLi">健身运动
+                                    <div class="sub-class-content subClass" style="display: none">
+                                        <div class="recommend-class">
+                                            <span>鱼油</span>
+                                            <span>辅酶Q10</span>
+                                            <span>益生菌</span>
+                                            <span>褪黑素</span>
+                                            <span>软骨素</span>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+
+
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </li>
+                                <li class="navdlLi">美妆/个护
+                                    <div class="subClass" style="display: none">
+                                        <div>
+                                            <span>维生素B</span>
+                                            <span>维生素C</span>
+                                            <span>维生素D</span>
+                                            <span>多种维生素</span>
+                                            <span>钙</span>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                            </ul>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </li>
+                                <li class="navdlLi">妈咪宝贝
+                                    <div class="sub-class-content subClass" style="display: none">
+                                        <div class="recommend-class">
+                                            <span>鱼油</span>
+                                            <span>辅酶Q10</span>
+                                            <span>益生菌</span>
+                                            <span>褪黑素</span>
+                                            <span>软骨素</span>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+
+
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="navdlLi">家居/数码
+                                    <div class="subClass" style="display: none">
+                                        <div>
+                                            <span>维生素B</span>
+                                            <span>维生素C</span>
+                                            <span>维生素D</span>
+                                            <span>多种维生素</span>
+                                            <span>钙</span>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                            </ul>
+                                        </div>
+
+
+
+                                    </div>
+                                </li>
+                                <li class="navdlLi">中西药品
+                                    <div class="sub-class-content subClass" style="display: none">
+                                        <div class="recommend-class">
+                                            <span>鱼油</span>
+                                            <span>辅酶Q10</span>
+                                            <span>益生菌</span>
+                                            <span>褪黑素</span>
+                                            <span>软骨素</span>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+
+
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="navdlLi">滋补保健
+                                    <div class="subClass" style="display: none">
+                                        <div>
+                                            <span>维生素B</span>
+                                            <span>维生素C</span>
+                                            <span>维生素D</span>
+                                            <span>多种维生素</span>
+                                            <span>钙</span>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                            </ul>
+                                        </div>
+
+
+
+                                    </div>
+                                </li>
+                                <li class="navdlLi">性福生活
+                                    <div class="sub-class-content subClass" style="display: none">
+                                        <div class="recommend-class">
+                                            <span>鱼油</span>
+                                            <span>辅酶Q10</span>
+                                            <span>益生菌</span>
+                                            <span>褪黑素</span>
+                                            <span>软骨素</span>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li class="navdlLi">环球美食
+                                    <div class="sub-class-content subClass" style="display: none">
+                                        <div class="recommend-class">
+                                            <span>鱼油</span>
+                                            <span>辅酶Q10</span>
+                                            <span>益生菌</span>
+                                            <span>褪黑素</span>
+                                            <span>软骨素</span>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+                                                <li>维生素D</li>
+                                                <li>维生素E</li>
+                                                <li>维生素K</li>
+                                                <li>多种维生素</li>
+                                            </ul>
+                                            <ul>
+                                                <li>矿物质</li>
+                                                <li>钙</li>
+                                                <li>铁</li>
+                                                <li>锌</li>
+
+
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                                <li>维生素</li>
+                                                <li>维生素A</li>
+                                                <li>维生素B</li>
+                                                <li>维生素C</li>
+                                                <li>维生素D</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </dd>
+                    </dl>
+
+
+                </div>
+
+                <!-- 后面的 ul -->
+
+                <ul class="site-menu">
+                    <li>首页</li>
+                    <li>维矿物质</li>
+                    <li>营养补充</li>
+                    <li>中西药品</li>
+                    <li>知名美妆</li>
+                    <li>免疫调节</li>
+                    <li>庄园级橄榄油</li>
+                    <li>有偿资讯</li>
+
+
+
+                </ul>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </header>
+
+
+    <main>
+        <div class="conter">
+            <div class="nch-breadcrumb wrapper">
+                <i class="icon-home"></i>
+                <span>
+                    <a href="https://www.baiyangwang.com">
+                        首页
+                    </a>
+                </span>
+                <span class="arrow">></span>
+                <span>微量元素</span>
+                <span class="arrow">></span>
+                <span>维生素</span>
+                <span class="arrow">></span>
+                <span>维生素D</span>
+                <span class="arrow">></span>
+                <span>美国进口百适滴海藻油DHA胶囊90粒赠来益 叶黄素咀嚼片40片、</span>
+            </div>
+
+
+            <div class="main1">
+
+
+                <!-- 放大镜 -->
+                <div class="preview fl">
+                    <div class="magnifier" id="magnifier1">
+                        <div class="magnifier-container">
+
+                            <div class="images-cover">
+
+                            </div>
+                            <!--当前图片显示容器-->
+                            <div class="move-view"></div>
+                            <!--跟随鼠标移动的盒子-->
+                        </div>
+
+
+                        <div class="magnifier-assembly">
+                            <!-- <div class="magnifier-btn">
+                            <span class="magnifier-btn-left">&lt;</span>
+                            <span class="magnifier-btn-right">&gt;</span>
+                        </div> -->
+
+
+                            <!--按钮组-->
+
+
+
+                            <div class="magnifier-line">
+                                <ul class="clearfix animation03">
+                                    <li class="active">
+                                        <div class="small-img">
+                                            <img src="../imgs/details/ia_10011.jpg">
+
+                                        </div>
+
+
+                                        <!-- <li class="active">
+                                        <div class="small-img">
+                                            <img src="../imgs/details/ia_100013.jpg">
+
+                                        </div>
+                                    </li>
+
+                                    <li class="active">
+                                        <div class="small-img">
+                                            <img src="../imgs/details/ia_100010.jpg">
+
+                                        </div>
+                                    </li>
+
+                                    <li class="active">
+                                        <div class="small-img">
+                                            <img src="../imgs/details/ia_100011.jpg">
+
+                                        </div>
+                                    </li>  -->
+                                </ul>
+                            </div>
+                            <!--缩略图-->
+                        </div>
+
+
+
+                        <div class="magnifier-view"></div>
+                        <!--经过放大的图片显示容器-->
+                    </div>
+
+                    <div class="ncs-handle">
+                        <a href="javascript:void(0);" class="share">分享</a>
+                        <a href="javascript:void(0);" class="favorite">收藏商品</a>
+                        <a href="javascript:void(0);" class="compare">加入对比</a>
+                        <a href="javascript:void(0);" class="inform">举 报</a>
+                    </div>
+
+                </div>
+
+                <div class="ncs-goods-summary">
+                    <!-- h2 标题 -->
+                    <div class="name">
+                        <h2 class="ncs-goods-h2"></h2>
+                    </div>
+                    <!-- 价格  -->
+                    <div class="ncs-meta">
+                        <p>
+                            <span class="ncsspan">市场价</span>
+                            <span class="cost-price"></span>
+                        </p>
+                        <p>
+                            <span class="ncsspan">商城价</span>
+                            <span class="price"></span>
+                        </p>
+                        <p>
+                            <span class="ncsspan">商品评分</span>
+                            <span></span>
+                            <span class="rate"></span>
+                        </p>
+
+
+                    </div>
+
+                    <!-- 配送 -->
+                    <div class="ncs-freight">
+                        <span class="freight-span1"> 配 送 至：</span>
+                        <div class="freight-DIV">
+                            <!-- <div class="DIV1 search">
+                                请选择地区
+                                <b>∨</b>
+                            </div> -->
+                            <input type="text" class="search DIV1" placeholder="请选择地区">
+
+
+                            <div class="DIV2">
+
+
+
+
+                            </div>
+                        </div>
+                        <span class="freight-span2">有货</span>
+                        <span class="freight-span3">免运费</span>
+
+                    </div>
+                    <!-- 数量的加减 -->
+                    <div class="ncs-buy" id="cart">
+                        <div class="ncs-figure-input">
+                            <input type="text" name="" id="quantity" value="1" size="3" maxlength="6" class="input-text"
+                                data-num="10">
+                            <div class="increase">
+                                <span class="addnum" style="cursor: pointer"></span>
+                                <sapn class="nownum" style="cursor: pointer"></sapn>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="ncs-btn">
+                            <a href="javascript:void(0);" class="addcart orange addcar" title="加入购物车" id="buycart">
+                                <i></i>
+                                加入购物车
+
+                            </a>
+                            <a href="javascript:void(0);" class="buynow" title="立即购买">
+                                立即购买
+                            </a>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                    <div class="ncs-cti">
+                        <hr>
+                        <dl>
+                            <dt>服务承诺：</dt>
+                            <dd>
+                                <span>
+                                    <img
+                                        src="https://b2cstatic.baiyangwang.com/shop/contracticon/05890672784766467_60.gif">100%正品保证
+                                </span>
+                                <span>
+                                    <img src="https://b2cstatic.baiyangwang.com/shop/contracticon/pz_60.gif">30天无忧售后
+                                </span>
+                                <span>
+                                    <img
+                                        src="https://b2cstatic.baiyangwang.com/shop/contracticon/05883488394380583_60.png">正品保障
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+            <div class="main2">
+
+                <!-- 左边 -->
+                <div class="main2left">
+
+
+
+
+
+                    <!-- log 关注 -->
+                    <div class="ncs-message-bar">
+
+
+                        <div class="default">
+                            <h5>百洋健康官方自营店</h5>
+                            <a href="javascript:void(0);">
+                                <img src="../imgs/details/ia_10064.png" alt="">
+                            </a>
+                        </div>
+                        <div class="default_store">
+
+                            <div class="store_name">
+                                <a href="https://www.baiyangwang.com/shop-1.html">进店逛逛</a>
+                            </div>
+                            <div class="store_attention">
+                                <a href="javascript:collect_store('1','count','store_collect')">关注店铺</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- 商品分类 -->
+                    <div class="ncs-class-bar">
+                        <div class="title">
+                            <h4>
+                                商品分类
+                            </h4>
+                        </div>
+                        <div class="ncs-content">
+                            <p>
+                                <span>
+                                    <a href="https://www.baiyangwang.com/shop_view-1-0-1-2-0.html">
+                                        按新品
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="https://www.baiyangwang.com/shop_view-1-0-2-2-0.html">
+
+                                        按价格
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="https://www.baiyangwang.com/shop_view-1-0-3-2-0.html">
+                                        按销量
+                                    </a>
+                                </span>
+                                <span>
+                                    <a href="https://www.baiyangwang.com/shop_view-1-0-5-2-0.html">
+                                        按人气
+                                    </a>
+                                </span>
+                            </p>
+
+                            <div class="ncs-search">
+                                <form id="" name="searchShop" method="get" action="index.php">
+                                    <input type="text" class="text w120" name="inkeyword" value="" placeholder="搜索店内商品">
+                                    <a href="javascript:document.searchShop.submit();" class="ncbtn">搜索</a>
+                                </form>
+                            </div>
+
+                            <ul class="ncs-submenu">
+                                <li>
+                                    <a href="https://www.baiyangwang.com/shop_view-1-0-0-0-0.html">全部商品</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.baiyangwang.com/shop_view-1-229-0-0-0.html">食品饮料</a>
+                                    <ul id="stc_229" class="stc_229">
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-230-0-0-0.html">
+                                                蜂蜜
+                                            </a>
+                                        </li>
+                                        <li>
+
+                                            <a href="https://www.baiyangwang.com/shop_view-1-231-0-0-0.html">
+                                                矿泉水/碳酸饮料
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://www.baiyangwang.com/shop_view-1-24-0-0-0.html">母婴专区</a>
+                                    <ul id="stc_24" class="stc_24">
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-243-0-0-0.html">浴巾</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-244-0-0-0.html">床上用品</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-245-0-0-0.html">宝宝零食</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-25-0-0-0.html">营养食品</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-26-0-0-0.html">尿裤湿巾</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-27-0-0-0.html">喂养用品</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-28-0-0-0.html">洗护护理</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-29-0-0-0.html">宝宝玩具</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-30-0-0-0.html">妈妈营养</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-31-0-0-0.html">妈妈用品</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://www.baiyangwang.com/shop_view-1-32-0-0-0.html">营养保健</a>
+                                    <ul id="stc_32">
+                                        <li><a href="https://www.baiyangwang.com/shop_view-1-33-0-0-0.html">关爱父母</a>
+                                        </li>
+                                        <li><a href="https://www.baiyangwang.com/shop_view-1-34-0-0-0.html">魅力女士</a>
+                                        </li>
+                                        <li><a href="https://www.baiyangwang.com/shop_view-1-35-0-0-0.html">强健男人</a>
+                                        </li>
+                                        <li><a href="https://www.baiyangwang.com/shop_view-1-36-0-0-0.html">综合营养</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://www.baiyangwang.com/shop_view-1-37-0-0-0.html">医疗器械</a>
+                                    <ul id="stc_37">
+                                        <li><a href="https://www.baiyangwang.com/shop_view-1-38-0-0-0.html">检测器材</a>
+                                        </li>
+                                        <li><a href="https://www.baiyangwang.com/shop_view-1-39-0-0-0.html">康复理疗仪</a>
+                                        </li>
+                                        <li><a href="https://www.baiyangwang.com/shop_view-1-40-0-0-0.html">辅助理疗</a>
+                                        </li>
+                                        <li><a href="https://www.baiyangwang.com/shop_view-1-41-0-0-0.html">防护系列</a>
+                                        </li>
+                                        <li><a href="https://www.baiyangwang.com/shop_view-1-42-0-0-0.html">家庭常备</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://www.baiyangwang.com/shop_view-1-43-0-0-0.html">健康生活</a>
+                                    <ul id="stc_43">
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-242-0-0-0.html">文具耗材</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-256-0-0-0.html">体检套餐</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-241-0-0-0.html">烹饪锅具</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-44-0-0-0.html">个护美妆</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-45-0-0-0.html">家庭清洁</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-46-0-0-0.html">口腔护理</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-47-0-0-0.html">卫生护理</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-48-0-0-0.html">生活电器</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-49-0-0-0.html">香薰尊品</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="https://www.baiyangwang.com/shop_view-1-50-0-0-0.html">成人用品</a>
+                                    <ul id="stc_50">
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-51-0-0-0.html">计生用品</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.baiyangwang.com/shop_view-1-52-0-0-0.html">情趣用品</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+                <!-- 右边 -->
+
+                <div class="mainright">
+                    <div class="tabbar pngFix" id="main-nav">
+
+                        <ul id="categorymenu" class="category">
+                            <li class="">
+                                <a href="#content" class="acti" id="con">
+                                    商品详情
+
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#content" class="" id="con">
+                                    商品评价<em>(0)</em>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="#content" class="" id="con">
+                                    购买咨询
+
+                                </a>
+                            </li>
+
+
+                            <div class="ncs-goodscode-box">
+                                <a class="ncs-goodscode-link">手机购买</a>
+                                <div class="ncs-goods-code">
+                                    <img src="https://b2cstatic.baiyangwang.com/shop/store/1/877781064.png"
+                                        title="用商城手机客户端扫描二维码直达商品详情内容">
+                                    <span class="ncs-goods-code-note">客户端扫购有惊喜</span> </div>
+                            </div>
+                        </ul>
+
+
+
+                        <!-- 三个div -->
+                        <!-- 第一个 div -->
+                        <div class="tabdiv tabDIV1" style="display:block">
+                            <img src="../imgs/details/123.png" alt="">
+                        </div>
+                        <!-- 第二个 div -->
+                        <div class="tabdiv tabDIV2">
+                            <!-- 第一个 -->
+                            <div class="top">
+                                <div class="rate">
+                                    <p>
+                                        <strong>100</strong>
+                                        <sub>%</sub>
+                                        好评
+                                    </p>
+                                    <span>共有0人参与评分</span>
+                                </div>
+                                <!-- 第二个 -->
+                                <div class="percent">
+                                    <dl>
+                                        <dt>好评<em>(100%)</em></dt>
+                                        <dd><i style="width: 100%"></i></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>中评<em>(0%)</em></dt>
+                                        <dd><i style="width: 0%"></i></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>差评<em>(0%)</em></dt>
+                                        <dd><i style="width: 0%"></i></dd>
+                                    </dl>
+                                </div>
+                                <!-- 第三个 -->
+                                <div class="btns">
+                                    <span>您可对已购商品进行评价</span>
+                                    <p>
+                                        <a href="https://www.baiyangwang.com/index.php?act=member_order&amp;op=index"
+                                            class="ncbtn ncbtn-grapefruit" target="_blank">
+                                            <i class="icon-comment-alt"></i>
+                                            评价商品
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ncs-goods-title-nav">
+                                <ul id="comment_tab">
+                                    <li data-type="all" class="current"><a href="javascript:void(0);">商品评价(0)</a></li>
+                                    <li data-type="1"><a href="javascript:void(0);">好评(0)</a></li>
+                                    <li data-type="2"><a href="javascript:void(0);">中评(0)</a></li>
+                                    <li data-type="3"><a href="javascript:void(0);">差评(0)</a></li>
+                                    <li data-type="4"><a href="javascript:void(0);">有图(0)</a></li>
+                                </ul>
+                            </div>
+
+                            <div id="goodseval" class="ncs-commend-main">
+                                <div class="ncs-norecord">暂无符合条件的数据记录</div>
+
+                            </div>
+
+
+                        </div>
+                        <!-- 第三个 div -->
+                        <div class="tabdiv tabDIV3">
+                            <div id="consulting_demo" class="ncs-loading">
+
+                                <div class="top" style="overflow: hidden;">
+                                    <div class="ncs-cosult-tips"> <i></i>
+                                        <p>因厂家更改商品包装、场地、附配件等不做提前通知，且每位咨询者购买、提问时间等不同。为此，客服给到的回复仅对提问者3天内有效，其他网友仅供参考！给您带来的不变还请谅解，谢谢！
+                                        </p>
+                                    </div>
+                                    <div class="ncs-cosult-askbtn">
+                                        <a href="https://www.baiyangwang.com/index.php?act=goods&amp;op=consulting_list&amp;goods_id=877781064#askQuestion"
+                                            target="_blank" class="ncbtn ncbtn-grapefruit">我要提问</a></div>
+                                </div>
+                                <div class="ncs-goods-title-nav">
+                                    <ul id="consulting_tab">
+                                        <li class="currentt"><a href="">全部</a>
+                                        </li>
+                                        <li class=""><a href="javascript:void(0);">商品咨询</a>
+                                        </li>
+                                        <li class=""><a href="javascript:void(0);">支付问题</a>
+                                        </li>
+                                        <li class=""><a href="javascript:void(0);">发票及保修</a>
+                                        </li>
+                                        <li class=""><a href="javascript:void(0);">促销及赠品</a>
+                                        </li>
+                                        <li class=""><a href="javascript:void(0);">查单查件</a>
+                                        </li>
+                                        <li class=""><a href="javascript:void(0);">服用咨询</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="ncs-cosult-main">
+                                    <div class="ncs-norecord">还没有咨询内容</div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <!-- 底部 -->
+
+    <footer>
+        <div class="conter">
+            <!-- ******************footer1   ************************ -->
+            <div class="footer1">
+                <img src="../imgs/index/ia_10034.jpg" alt="baozhang_img">
+            </div>
+
+            <!-- ******************footer2   ************************ -->
+            <div class="footer2">
+                <!-- 左边 log -->
+                <div class="footer2-left">
+                    <div class="foot_logo">
+                        <img src="../imgs/index/ia_10075.png" alt="">
+                    </div>
+                    <div class="foot_guanzhu">
+
+                        <div>关注我们</div>
+                        <div>
+                            <img src="../imgs/index/ia_10082.png" alt="">
+
+                            <div class="test_triangle_border popup_weibo">
+                                <span></span>
+                                <img src="../imgs/index/ia_10025.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div>
+                            <img src="../imgs/index/ia_10081.png" alt="">
+
+                            <div class="test_triangle_border popup_weixin">
+                                <span></span>
+                                <img src="../imgs/index/ia_10026.jpg" alt="">
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- 中间 列表 -->
+                <ul class="footer2-conter">
+                    <li>
+                        <dl>
+                            <dt>
+                                新手指南
+                            </dt>
+                            <dd>
+                                购买流程
+                            </dd>
+                            <dd>
+                                支付方式
+                            </dd>
+                            <dd>
+                                通关税费
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                    <li>
+                        <dl>
+                            <dt>
+                                售后服务
+
+
+                            </dt>
+                            <dd>
+                                退货政策
+
+                            </dd>
+                            <dd>
+                                退货流程
+
+                            </dd>
+                            <dd>
+                                退款流程
+                            </dd>
+
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                物流配送
+                            </dt>
+                            <dd>
+                                配送方式
+
+                            </dd>
+                            <dd>
+                                物流跟踪
+
+                            </dd>
+                            <dd>
+                                自选物流
+                            </dd>
+
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>
+                                关于我们
+
+                            </dt>
+                            <dd>
+                                公司简介
+
+                            </dd>
+                            <dd>
+                                联系我们
+
+                            </dd>
+                            <dd>
+                                招商合作
+                            </dd>
+
+                        </dl>
+                    </li>
+
+                </ul>
+
+
+                <!-- 右边二维码 -->
+                <div class="footer2-right">
+                    <div>
+                        <p>
+                            <img src="../imgs/index/ia_10076.jpg" alt="">
+                        </p>
+                        <p>
+                            扫描进入微信商城
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <img src="../imgs/index/ia_10077.jpg" alt="">
+
+                        </p>
+                        <p>
+                            扫描下载百洋APP
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="footer3">
+
+                <p>
+                    <a href="javascript:void(0)">友情链接申请</a>
+                    | <a target="_blank" href="http://www.telllove520.com/">求婚公司</a>
+                    | <a target="_blank" href="http://www.yangshengyinshi.com">食疗养生</a>
+                    | <a target="_blank" href=" http://www.chinajs120.com">九博精神健康网</a>
+                    | <a target="_blank" href="https://www.160dyf.com">网上药店</a>
+                    | <a target="_blank" href="https://www.nuuha.com/ ">健康养生</a>
+                    | <a target="_blank" href="http://www.999ask.com/">邻医网</a>
+                    | <a target="_blank" href="http://www.yitiaogen8.com">养生网</a>
+                    | <a target="_blank" href="http://www.gaofeib2c.com ">红酒代理</a>
+                    | <a target="_blank" href=" http://www.baijiu88.com">定制酒</a>
+                    | <a target="_blank" href="http://www.yxk120.com">网上药店</a>
+                    | <a target="_blank" href="http://www.fuguantang.com">药房网</a>
+                    | <a target="_blank" href="http://www.zyzydq.com/">中医中药大全网</a>
+                    | <a target="_blank" href="https://www.xiumz.com/">中医养生</a>
+                    | <a target="_blank" href="https://www.mlaoban.com">网店转让</a>
+                    | <a target="_blank" href="http://www.chinamaofa.com/">植发医院</a>
+                    | <a target="_blank" href="http://www.17bigu.com">辟谷</a>
+                    | <a target="_blank" href="http://www.sixzt.com">活力舒</a>
+                    | <a target="_blank" href="http://www.ysb.cn">冬虫夏草</a>
+                    | <a target="_blank" href="https://www.zangyaow.com">藏药</a>
+                    | <a target="_blank" href="https://www.yaofangwang.com/">药房网</a>
+                </p>
+                <br>
+                <p>
+                    <a href="../baiyangwang.html" target="_blank">首页</a>
+                    | <a target="_blank"
+                        href="https://www.baiyangwang.com/member/article-article-ac_id-22.html">联系我们</a>
+
+                </p>
+                <p>
+                    <a target="_blank" href="http://www.beian.miit.gov.cn/">鲁ICP备09091598号</a>
+                    版权所有 2007-2018 青岛百洋健康药房连锁有限公司 百洋健康
+                    <a target="_blank"
+                        href="https://b2cstatic.baiyangwang.com/shop/common/lADPDgQ9qcyZo-jNBlnNCIw_2188_1625.jpg">互联网药品信息服务资质证书编号
+                        (鲁)-经营性-2017-0003</a>
+                    <a target="_blank" href="https://shopncstaticimage.baiyangwang.com/ylqxxkz.jpg">医疗器械经营许可证</a>
+
+                </p>
+                <br>
+                <p>
+                    <a href="http://www.12377.cn/">
+                        <img src="../imgs/index/ia_10078.jpg">
+                    </a>
+
+                </p>
+
+
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- 侧边 -->
+
+
+    <div id="ncToolbar">
+        <div class="ncToolbar-conter">
+
+
+            <!-- 会员登录 -->
+            <div class="user"">
+                  <a href=" javascript:void(0);">
+                <div class="avatar">
+                    <img src="../imgs/index/ia_10071.jpg">
+                </div>
+                <span class="tit">会员登录</span>
+                </a>
+            </div>
+
+
+            <!-- 购物车  在线联系-->
+
+            <div class="ever">
+                <div class="cart">
+                    <a href="javascript:void(0);" id="rtoolbar_cart">
+                        <span class="icon"></span>
+                        <span class="name name1" id="end">购物车</span>
+                        <i id="rtoobar_cart_count" class="new_msg" ">
+  
+                          </i>
+                      </a>
+                  </div>
+                  
+                  <div class=" chat">
+
+                            <a href="javascript:void(0);" id="chat_show_user">
+                                <span class="icon">
+                                </span>
+                                <i id="new_msg" class="new_msg""></i>
+                                  <span class=" tit kefu">在线联系 </span>
+                            </a>
+
+                </div>
+            </div>
+
+            <div class="prech">&nbsp;</div>
+            <!-- 商品对比 -->
+
+            <div class=" compare">
+                <a href="javascript:void(0);" id="compare">
+                    <span class="icon"></span>
+                    <span class="tit">商品对比</span>
+                </a>
+            </div>
+
+        </div>
+        <!-- 返回顶部 -->
+        <div class="gotop">
+            <a href="javascript:void(0);" id="gotop">
+                <span class="icon"></span>
+                <span class="tit">返回顶部</span>
+            </a>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+<!-- <script src="../lib/jquery-1.10.1.min.js"></script> -->
+
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+
+<script type="text/javascript" src="../lib/magnifier.js"></script>
+
+<!-- <script src="../lib/city/kuCity.js"></script> -->
+
+<script src="../lib/common.js"></script>
+
+<!-- <script type="text/javascript" src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script> -->
+
+<script src="../js/jquery.fly.min.js"></script>
+
+
+<script src="../js/details.js"></script>
+
+
+
+
+</html>

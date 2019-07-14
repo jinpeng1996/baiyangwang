@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    font: 12px/20px "Hiragino Sans GB", "Microsoft Yahei", arial, 宋体, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #666;
+    background: #FFF none repeat scroll 0 0;
+    min-width: 1200px;
+}
+
+
+
+header {
+    // width: 100%;
+    height: 80px;
+
+    .box {
+        width: 1000px;
+        margin: 0 auto;
+        height: 80px;
+
+        .site-logo {
+            width: 240px;
+            height: 60px;
+            float: left;
+            margin: 10px 0 0 0;
+
+            a {
+                img {
+                    max-width: 240px;
+                    max-height: 60px;
+                }
+            }
+        }
+
+        .nc-login-now {
+            font-size: 14px;
+            color: #AAA;
+            line-height: 24px;
+            float: right;
+            height: 24px;
+            margin-top: 50px;
+
+            a {
+                font-weight: 600;
+                margin-left: 4px;
+                color: #EF3C79;
+                text-decoration: none;
+            }
+
+        }
+
+    }
+}
+
+main {
+    background: #FAFAFA url(../imgs/register/ia_10002.png) repeat 50% 50%;
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+
+    .nc-register-box {
+        background: rgba(0, 0, 0, 0.15);
+        width: 860px;
+        height: 560px;
+        padding: 10px;
+        margin: 60px auto;
+
+        .nc-register-layout {
+            background-color: #FFF;
+            display: block;
+            width: 820px;
+            height: 520px;
+            padding: 19px;
+            border: solid 1px #CCC;
+            overflow: hidden;
+
+
+
+
+            .left {
+                width: 580px;
+                height: 520px;
+                float: left;
+                margin: 0 auto;
+                // padding-right: 10px;
+
+
+                .left-top {
+
+                    border-bottom: solid 1px #E6E6E6;
+
+                    .tabs-nav {
+                        font-size: 0;
+
+
+                        vertical-align: bottom;
+                        letter-spacing: normal;
+                        word-spacing: normal;
+                        width: 50%;
+                        height: 40px;
+                        margin: 0 auto;
+                        position: relative;
+
+                        a {
+                            text-align: center;
+                            font-size: 18px;
+                            line-height: 24px;
+                            padding-bottom: 13px;
+                            position: relative;
+                            z-index: 1;
+                            color: #EF3C79;
+                            display: block;
+                            border-bottom: 3px solid #EF3C79;
+                            text-decoration: none;
+                        }
+
+                        i {
+                            display: block;
+                            font-size: 0;
+                            line-height: 0;
+                            border-color: #F32613 transparent transparent transparent;
+                            border-style: solid dashed dashed dashed;
+                            border-width: 7px;
+                            width: 0;
+                            height: 0;
+                            margin-left: -4px;
+                            position: absolute;
+                            z-index: 1;
+                            left: 50%;
+                            bottom: -14px;
+                        }
+                    }
+
+                }
+
+                .tabs-content {
+                    padding: 50px 80px 0 100px;
+
+                    dl {
+                        background-color: #FFF;
+                        width: 398px;
+                        height: 52px;
+                        margin-top: -1px;
+                        border: solid 1px #E6E6E6;
+                        position: relative;
+                        z-index: 1;
+
+                        dt {
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #666;
+                            width: 72px;
+                            padding: 16px 0 16px 20px;
+                            float: left;
+                        }
+
+                        dd {
+                            height: 28px;
+                            float: left;
+                            padding: 12px 0;
+
+                            input {
+                                color: #666;
+                                font-family: "microsoft yahei";
+                                font-size: 14px;
+                                line-height: 28px;
+                                width: 290px;
+                                height: 28px;
+                                padding: 0;
+                                border: none 0;
+                            }
+
+                            .inf {
+                                position: absolute;
+                                left: 295px;
+                                top: 18px;
+                            }
+                        }
+                    }
+
+                }
+
+                .code-div {
+                    width: 100%;
+                    height: 54px;
+
+                    dl {
+                        width: 277px;
+                        float: left;
+                        background-color: #FFF;
+                        // width: 398px;
+                        height: 52px;
+                        margin-top: -1px;
+                        border: solid 1px #E6E6E6;
+                        position: relative;
+                        z-index: 1;
+
+                        dd {
+                            height: 28px;
+                            float: left;
+                            padding: 12px 0;
+
+                            input {
+                                width: 100px !important;
+                                font-family: "microsoft yahei";
+                                font-size: 14px;
+                                line-height: 28px;
+                                height: 28px;
+                                padding: 0;
+                                border: none 0;
+                                font: 12px/20px Arial;
+                                color: #777;
+                                background-color: #FFF;
+                                vertical-align: top;
+                                display: inline-block;
+                            }
+
+                            .inf {
+                                position: absolute;
+                                top: 20px;
+                                left: 197px;
+
+                            }
+                        }
+                    }
+
+                    div {
+                        display: inline-block;
+                        width: 120px;
+                        height: 52px;
+                        margin: -1px 0 0 -1px;
+                        border: solid 1px #E6E6E6;
+                        position: relative;
+                        z-index: 1;
+
+                        span {
+                            display: inline-block;
+                            width: 120px;
+                            height: 52px;
+                            text-align: center;
+                            line-height: 52px;
+                            font-size: 30px;
+
+                        }
+
+                        a {
+                            font-size: 14px;
+                            text-decoration: none;
+                            line-height: 52px;
+                            color: #FFF;
+                            background: rgba(0, 0, 0, 0.5);
+                            text-align: center;
+                            display: none;
+                            width: 120px;
+                            height: 52px;
+                            position: absolute;
+                            z-index: 1;
+                            top: 0;
+                            left: 0;
+                        }
+
+                        &:hover a {
+                            display: block;
+                        }
+                    }
+
+
+
+                }
+
+                .tiptext {
+                    line-height: 20px;
+                    color: #999;
+                    margin: 15px 0;
+
+                    span {
+                        line-height: 20px;
+                        color: #999;
+
+                        a {
+                            line-height: 22px;
+                            color: #FFF;
+                            background-color: #21b384;
+                            vertical-align: middle;
+                            display: inline-block;
+                            height: 22px;
+                            padding: 0 8px;
+                            margin: 0 4px;
+                            border-radius: 2px
+                        }
+                    }
+                }
+
+                .submit-div {
+                    margin-top: 15px;
+
+                    input {
+                        font-family: "microsoft yahei";
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #FFF;
+                        background-color: #EF3C79;
+                        width: 398px;
+                        height: 42px;
+                        border: solid 1px #EF3C79;
+                        border-radius: 3px;
+                        cursor: pointer;
+                    }
+                }
+
+
+
+
+            }
+
+
+
+
+
+            .right {
+                width: 200px;
+                height: 500px;
+                float: right;
+                padding: 20px 0 0 19px;
+                border-left: solid 1px #E6E6E6;
+
+                h4 {
+                    font-size: 14px;
+                    line-height: 20px;
+                    height: 20px;
+                    margin-bottom: 20px;
+                    color: #333;
+                }
+
+                ul {
+                    list-style: none outside none;
+
+                    li {
+                        color: #999;
+                        line-height: 24px;
+                        margin-bottom: 10px;
+                        padding-left: 12px;
+                        font-size: 12px;
+
+                        i {
+                            background: url(../imgs/register/ia_10004.png) no-repeat;
+                            vertical-align: middle;
+                            display: inline-block;
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 8px;
+
+
+                        }
+
+                        &:nth-child(1) i {
+                            background-position: 0 -76px;
+
+
+                        }
+
+                        &:nth-child(2) i {
+                            background-position: -30px -76px;
+
+                        }
+
+                        &:nth-child(3) i {
+                            background-position: -60px -76px;
+
+                        }
+
+                        &:nth-child(4) i {
+                            background-position: -90px -76px;
+
+                        }
+
+                        &:nth-child(5) i {
+                            background-position: -120px -76px;
+                        }
+
+                        &:nth-child(6) i {
+                            background-position: -150px -76px;
+
+                        }
+
+                    }
+                }
+
+            }
+
+
+
+
+        }
+    }
+
+}
+
+.cti {
+    clear: both;
+    display: block;
+    float: none;
+    height: 60px;
+    width: 1200px;
+}
+
+footer {
+    font-size: 12px !important;
+    text-align: center;
+    margin: 15px auto;
+    padding-bottom: 10px;
+    overflow: hidden;
+    width: 1200px;
+    height: 70px;
+
+
+    p:nth-child(1) {
+        color: #666;
+        word-spacing: 5px;
+        padding: 10px 0;
+
+        a {
+            color: #666;
+            text-decoration: none;
+
+            &:hover {
+                color: #EF3C79;
+            }
+        }
+
+    }
+
+    p:nth-child(2) {
+        color: #666;
+        text-decoration: none;
+
+        a {
+            color: #666;
+            text-decoration: none;
+
+            &:hover {
+                color: #EF3C79;
+            }
+        }
+
+
+    }
+
+}
