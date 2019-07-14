@@ -190,8 +190,8 @@
                 for (var m = 0; m < buycartt.length; m++) {
 
                     buycartt[m].onclick = function () {
-                        console.log(23333);
-                        
+                        // console.log(23333);
+
                         var gid = this.dataset.gid;
                         ajax2({
                             type: 'get',
@@ -200,9 +200,9 @@
                             // async: false,
                             success: str => {
 
-                                console.log(2222);
-                                
+                                // console.log(2222);
 
+                                alert("添加成功")
 
                             }
                         });
@@ -379,6 +379,8 @@
     cart.onclick = function () {
         let username = getCookie('username');
         // console.log(uid);
+        // console.log(33333);
+
 
         let uid = getCookie('uid');
         if (uid) {

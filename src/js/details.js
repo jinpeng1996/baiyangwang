@@ -109,7 +109,7 @@
             data: 'id=' + id,
             success: str => {
                 // console.log(232326666663);
-
+                alert("添加成功")
 
 
 
